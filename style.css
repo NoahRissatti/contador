@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Zetta:wght@300&display=swap');
+
+:root{
+    --azul-escuro: rgb(16, 16, 61);
+    --azul: rgb(37, 81, 224);
+    --verde: rgb(24, 131, 24);
+    --bege: rgb(233, 233, 204);
+    --fonte: 'Roboto Mono', monospace;
+    --fonte_botoes: 'Lexend Zetta', sans-serif;
+}
+
+body{
+    background-color: var(--bege);
+}
+
+.caixa{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+}
+
+.caixa__titulo--principal{
+    grid-row: 1;
+    grid-column: 2;
+    font-size: 100px;
+    color: var(--azul-escuro);
+    font-family: var(--fonte);
+    justify-self: center;
+}
+
+.caixa__nmr{
+    grid-row: 2;
+    grid-column: 2;
+    font-size: 125px;
+    justify-self: center;
+    color: black;
+    font-family: var(--fonte);
+}
+
+.caixa__botoes{
+    grid-column: 2;
+    grid-row: 3;
+    justify-self: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button{
+    background-color: var(--bege);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin: 15px;
+    font-family: var(--fonte_botoes);
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px black solid;
+}
+
+button:hover{
+    border-color: var(--azul);
+    cursor: pointer;
+}
+
+.verde{
+    color: green;
+}
+
+.vermelho{
+    color: red;
+}
